@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form action="post">
+      <section class="rating-card">
+        <div class="star-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <article class="rating-description">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </article>
+        <div class="rating-numbers">
+            <input id="one" type="radio" name="rating" value="1">
+            <label for="one" class="star">1</label>
+            <input id="two" type="radio" name="rating" value="2">
+            <label for="two" class="star">2</label>
+            <input id="three" type="radio" name="rating" value="3">
+            <label for="three" class="star">3</label>
+            <input id="four" type="radio" name="rating" value="4">
+            <label for="four" class="star">4</label>
+            <input id="five" type="radio" name="rating" value="5">
+            <label for="five" class="star">5</label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </section>
+    </form>
+    <div class="thank-card">
+      <div class="tanhk-image">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="thank-comment"></div>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

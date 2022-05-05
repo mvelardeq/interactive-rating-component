@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Montserrat&family=Mukta:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: hsl(0, 0%, 100%);
+    --color2: hsl(217, 12%, 63%);
+    --color3: hsl(216, 12%, 54%);
+    --color4: hsl(213, 19%, 18%);
+    --color5: hsl(216, 12%, 8%);
+}
+
+body{
+    margin: 0;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Mukta', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.rating-card, .thank-card{
+    width: 22rem;
+    height: 22rem;
+    padding: 1.5rem;
+    background: hsl(213, 19%, 18%);
+    background: radial-gradient(circle, hsl(213, 19%, 18%) 0%, rgb(31, 32, 39) 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.star-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    line-height: 2.5rem   ;
+    color: #FC7615;
+}
+.rating-description h1{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.rating-description p{
+    font-weight: 300;
+}
+
+.rating-numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.rating-numbers input{
+    /* display: none; */
+    visibility: hidden;
+}
+.rating-numbers label{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    text-align: center;
+    line-height: 3rem   ;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.rating-numbers label:hover{
+    background-color: hsl(216, 12%, 54%);
+}
+.rating-numbers label.active{
+    background-color: #FC7615;
+}
+.btn{
+    border: none;
+    padding: 0.7rem 0;
+    background-color: #FC7615;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #FC7615;
+}
+
+.thank-card{
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.active-card{
+    display: flex;
+}
+.none{
+    display: none;
+}
+.thank-comment{
+    display: inline-block;
+    background-color: hsl(213, 19%, 18%);
+    color: #FC7615;
+    padding: 0.2rem 1.5rem;
+    border-radius: 16px;
+}
